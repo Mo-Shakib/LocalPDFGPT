@@ -5,7 +5,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import OllamaEmbeddings
 
 # Load and split PDF
-loader = PyPDFLoader("book.pdf") # pdf file name
+loader = PyPDFLoader("book.pdf")  # pdf file name
 documents = loader.load()
 
 splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
